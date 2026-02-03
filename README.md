@@ -191,3 +191,218 @@ fun main(){
     print("Produto: $produto($n1 * $n3), Soma: $soma($n2 + $n4)")
 }
 ```
+
+## Exercício 16 - Novo Salário com Aumento 💹
+```
+fun main(){
+	val salario = 1000.0
+    val porcentagem = 10.0
+    
+    val aumento = salario * (porcentagem/100.0)
+    val novo = salario + aumento
+    
+    print("Novo salário: $novo, Aumento: $aumento")
+}
+```
+
+## Exercício 17 - Área de uma Circunferência ⭕
+```
+fun main(){
+	val raio = 5.00
+    
+    val area = 3.14 * raio * raio
+    print(area)
+}
+```
+
+## Exercício 19 - Cálculo das 4 Operações Básicas
+```
+fun main(){
+	val n1 = -15
+    val n2 = 3
+    
+    val soma = n1 + n2
+    val subtracao = n1 - n2
+    val multiplicacao = n1 * n2
+    val divisao = n1/n2
+    
+    println("Adição: $n1 + $n2 = $soma")
+    println("Subtração: $n1 - $n2 = $subtracao")
+    println("Multiplicação: $n1 * $n2 = $multiplicacao")
+    print("Divisão: $n1/$n2 = $divisao")
+}
+```
+
+## Exercício 20 - Velocidade de um Projétil 🚀
+```
+fun main(){
+	val distancia = 200.0
+    val tempo = 4.0
+    
+    val km = distancia/tempo
+    val velocidade = km/3.6
+    print("Velocidade: $velocidade m/s")
+}
+```
+
+## Exercício 21 - Potência ⬆️
+```
+fun main(){
+	val base = -3.0
+    val expoente = 4.0
+    
+    val resultado = Math.pow(base,expoente)
+    print(resultado)
+}
+```
+
+## Exercício 22 - Volume de uma Esfera 🌎
+```
+fun main(){
+	val raio = 5.00
+    
+    val volume = (4.0/3.0) * 3.14 * Math.pow(raio,3.0)
+    print(volume)
+}
+```
+
+## Exercício 23 - Pés para Metros 👣
+```
+fun main(){
+	val pes = 10.0
+    
+    val metros = pes * 0.3048
+    print(metros)
+}
+```
+
+## Exercício 24 - Cálculo de Raiz ✅
+```
+fun main(){
+	val base = 16.0
+    val indice = 2.0
+    
+    val raiz = Math.pow(base,1.0/indice)
+    print(raiz)
+}
+```
+
+## Exercício 25 - Sucessor e Antecessor ➡️⬅️
+```
+fun main(){
+	val numero = -3
+   	
+    val sucessor = numero + 1
+    val antecessor = numero - 1
+    
+    print("Sucessor: $sucessor, Antecessor: $antecessor")
+}
+```
+
+## Exercício 26 - Quadrado da Divisão ➗
+```
+fun main(){
+	val n1 = 10.0
+    val n2 = 2.0
+    
+    val resultado_divisao = n1/n2
+    val resultadoQuadrado = resultado_divisao * resultado_divisao
+    print(resultadoQuadrado)
+}
+```
+
+## Exercício 27 - Diferença ➖
+```
+fun main(){
+	val n1 = 10.0
+    val n2 = 5.0
+    val diferenca:Double
+    
+    if (n1 > n2){
+		diferenca = n1 - n2
+    } else{
+		diferenca = n2 - n1
+    }
+    
+    print(diferenca)
+}
+```
+
+## Exercício 28 - Positivo, Negativo ou Neutro 🔢
+```
+fun main(){
+	val numero = 0
+   	
+    if (numero > 0) {
+		print("Positivo")
+    } else if (numero < 0){
+		print("Negativo")
+   	} else{
+		print("Neutro")
+    }
+}
+```
+
+## Exercício 29 - Média das Notas 🧾
+```
+fun main(){
+	val nota1 = 8.0
+    val nota2 = 7.0
+    val nota3 = 6.0
+    val nota4 = 8.0
+    
+    val media = (nota1 + nota2 + nota3 + nota4)/4
+    if (media >= 5){
+		print("Média: $media, Aprovado!")
+    } else{
+		print("Média: $media, Reprovado")
+    }
+}
+```
+
+## Exercício 30 - Média das Notas com Verificação 📝
+```
+fun main(){
+	val nota1 = 3.0
+    val nota2 = 4.0
+    val nota3 = 5.0
+    val nota4 = 6.0
+    
+    val media = (nota1 + nota2 + nota3 + nota4)/4
+    if (media > 7){
+		print("Média: $media, Aprovado!")
+    } else if (media >= 5){
+       	print("Média: $media, Exame.")
+    } else{
+		print("Média: $media, Reprovado")
+    }
+}
+```
+
+## Exercício 32 - Ordenação de 3 Números Inteiros 3️⃣
+```
+fun main(){
+	var n1 = 5
+    var n2 = 2
+    var n3 = 7
+    var temp:Int
+    
+    if (n1 > n2){
+		temp = n1
+        n1 = n2
+        n2 = temp
+    } else if(n1 > n3){
+		temp = n1
+        n1 = n3
+        n3 = temp
+    } else if(n2 > n3){
+		temp = n2
+        n2 = n3
+        n3 = temp
+    } else{
+		print("Erro")
+    }
+    
+    print("$n1, $n2, $n3")
+}
+```
